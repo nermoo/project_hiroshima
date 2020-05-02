@@ -181,10 +181,18 @@
 // }
 // }
 
-const person={
-    name:"aravinda",
-    age:23
-};
+// const person={
+//     name:"aravinda",
+//     age:23
+// };
 
-const sentence='my name'+ person.name +'and my age is' +person.age;
-console.log(sentence);
+// const sentence='my name'+ person.name +'and my age is' +person.age;
+// console.log(sentence);
+$(function(){
+    $("#navBartoggler").blur(function(event){
+        var screenWidth=window.innerWidth;
+        if(screenWidth<768){
+            $("#navbarSupportedContent").collapse("hide");
+        }
+    });
+});
