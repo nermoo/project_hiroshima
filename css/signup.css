@@ -1,8 +1,99 @@
+/* navbar */
+body,html{
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+  body > *{
+    flex-grow: 0;
+  }
+  body > nav + .container {
+    flex-grow: 1;
+  }
+/* navigation bar */
+
+#logo-img{
+    width: 80px;
+    height: 60px;
+    margin: 10px 15px 10px 0;
+}
+#navbar-header{
+    border-radius: 0px;
+    background-color: rgb(245, 136, 255);
+    border: 0px;
+    display: flex;
+    }
+#navbar-tog{
+    float: right;
+}    
+#brand{
+    float: left;
+    text-align: left;
+    font-size: 1.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav-items{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+
+}
+/* .container button{
+    float: right;
+} */
+
+#nav-item{
+    
+    padding-left:15px ;
+    text-align: left;
+}
+#nav-button{
+    float: right;
+}
+#nav-list{
+    text-align: center;
+}
+#nav-list2{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.v1{
+    height: 40px;
+    opacity: .7;
+    width: 1px;
+    /* border-left: 2px solid black; */
+    display: inline;
+    vertical-align: middle;
+    background-color: rgb(94, 96, 99);
+    
+}
+#cart-logo{
+    padding-right: 5px;
+}
+#signin-logo{
+    padding-left: 5px;
+    margin-left: 5px;
+}
+.nav-item #glyph{
+    
+    padding-right: 12px;
+}
+
+/* navbar end */
 body
 {
-    background: url(image2.jpg);
+    background: url(../image2.jpg);
     background-size: cover;
     font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .wrap
@@ -45,18 +136,153 @@ input[type=submit]
     margin-top: 30px;
     outline: none;
     border: none;
-    background: #60adde;
+    background: #ff23e2;
     opacity: 0.7;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 20px;
     color: #fff;
+}
+#login{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    background: #ff23e2;
+    opacity: 0.7;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+#login:hover{
+    background: #ac0495;
+    opacity: 0.7;
+    color: black;
 }
 
 input[type=submit]:hover
 {
-    background: #003366;
+    background: #ac0495;
     opacity: 0.7;
+    color: black;
 }
 
+/* media quaries */
+
+@media(min-width:300px){
+    h1{
+        font-size: 1.4em;
+    }
+    p{
+        font-size: 1em;
+    }
+    #brand{
+        font-size: 1.4em;
+    }
+    #logo-img{
+        width: 40px;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .card-deck{
+        width: 90%;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    .loginbox{
+        width: 80%;
+        height: inherit;
+        padding: 50px 30px 50px 30px;
+        margin-top: -50px;
+    }
+    .container{
+        width: 350px;
+    }
+}
+@media(min-width:576px){
+    h1{
+        font-size: 1.7em;
+    }
+    p{
+        font-size: 1.3em;
+    }
+    #logo-img{
+        width: 50px;
+        height: 30px;
+        margin: 5px 10px 5px;
+    }
+    .loginbox{
+        width: 80%;
+        height: inherit;
+        margin-top: 0px;
+    }
+    
+}
+@media (min-width: 768px){
+
+    .container {
+        width:800px;
+    }
+    #logo-img{
+        width: 60px;
+        height: 40px;
+        margin: 5px 10px 5px;
+    }
+    
+    .nav-item #glyph{
+        display:inline;
+        padding-right: 12px;
+    }
+    .loginbox{
+        width: 80%;
+        height: inherit;
+        margin-top: 0px;
+    }
 
 
+}
+
+@media(min-width:992px){
+    h1{
+        font-size: 1.8em;
+    }
+    p{
+        font-size: 1.4em;
+    }
+    .container{
+        width: 900px;
+    }
+    #logo-img{
+        width: 80px;
+        height: 60px;
+        margin: 10px 15px 10px 0;
+    }
+    
+    .nav-item #glyph{
+        display:inline;
+        padding-right: 12px;
+    }
+    .loginbox{
+        width: 50%;
+        height: inherit;
+        margin-top: 0px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1100px;
+    }
+    #logo-img{
+        width: 80px;
+        height: 60px;
+        margin: 10px 15px 10px 0;
+    }
+    .loginbox{
+        margin-top: 0px;
+        width: 40%;
+        height: inherit;
+    }
+    
+}
