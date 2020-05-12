@@ -196,7 +196,11 @@ $(function(){
             $("#navbarSupportedContent").collapse('hide');
         }
     });
-});
+  });
+    // $('.navbar-collapse ul li a').click(function(){
+    //     $('.navbar-toggler:show').click();
+    //     });
+
 
 $(function(){
     var slideIndex = 1;

@@ -310,6 +310,7 @@ h1{
     width: 50%;
     align-items: center;
     background-color: black;
+    display: none;
 }
 #addr{
     padding-top: 5px;
@@ -349,6 +350,12 @@ a  #social-glyph{
         display: block;
         margin: auto;
     }
+    .panel-container #horizontal-line{
+        display: block;
+    }
+    .jumbotron>.container>h1{
+        font-size: 2.8em;
+    }
     /*  */
 }
 @media(min-width:576px){
@@ -356,6 +363,12 @@ a  #social-glyph{
         width: 50px;
         height: 30px;
         margin: 5px 10px 5px;
+    }
+    .panel-container #horizontal-line{
+        display: none;
+    }
+    .jumbotron>.container>h1{
+        font-size: 50px;
     }
     
 }

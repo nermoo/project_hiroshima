@@ -243,6 +243,18 @@ a  #social-glyph{
         display: block;
         margin: auto;
     }
+    #brand{
+        font-size: 23px;
+        line-height: 0px;
+        letter-spacing: -3.094px;
+        font-weight: 700;
+    }
+    .panel-container #horizontal-line{
+        display: block;
+    }
+    .jumbotron>.container>h1{
+        font-size: 2.8em;
+    }
 }
 @media(min-width:576px){
     #logo-img{
@@ -250,6 +262,19 @@ a  #social-glyph{
         height: 30px;
         margin: 5px 10px 5px;
     }
+    #brand{
+        font-size: 26px;
+        line-height: 0px;
+        letter-spacing: -3.094px;
+        font-weight: 700;
+    }
+    .panel-container #horizontal-line{
+        display: none;
+    }
+    .jumbotron>.container>h1{
+        font-size: 50px;
+    }
+    
     
 }
 @media (min-width: 768px){
@@ -262,7 +287,13 @@ a  #social-glyph{
         height: 40px;
         margin: 5px 10px 5px;
     }
-    
+    #brand{
+        font-size: 28px;
+        line-height: 0px;
+        letter-spacing: -3.094px;
+        font-weight: 700;
+    }
+
     .nav-item #glyph{
         display:inline;
         padding-right: 12px;
@@ -280,7 +311,12 @@ a  #social-glyph{
         height: 60px;
         margin: 10px 15px 10px 0;
     }
-    
+    #brand{
+        font-size: 32px;
+        line-height: 0px;
+        letter-spacing: -3.094px;
+        font-weight: 700;
+    }
     .nav-item #glyph{
         display:inline;
         padding-right: 12px;
