@@ -1,6 +1,6 @@
 /* global */
 
-body,html{
+/* body,html{
     height: 100%;
 }
 body {
@@ -13,7 +13,7 @@ body {
   }
   body > nav + .container {
     flex-grow: 1;
-  }
+  } */
 /* navigation bar */
 
 #logo-img{
@@ -25,7 +25,7 @@ body {
     border-radius: 0px;
     background-color: rgb(245, 136, 255);
     border: 0px;
-    display: flex;
+    /* display: flex; */
     }
 #navbar-tog{
     float: right;
@@ -101,11 +101,11 @@ body {
 
 #body{
     background-image: url("../image2.jpg");
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    /* background-position: center center; */
+    /* background-repeat: no-repeat; */
     background-attachment: fixed;
 }
 h1{
@@ -229,6 +229,16 @@ a  #social-glyph{
 
 /* media quaries */ 
 @media(min-width:300px){
+    #body{
+        background-image: url("../image2.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     #brand{
         font-size: 1.4em;
     }
