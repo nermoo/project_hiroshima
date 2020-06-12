@@ -1,5 +1,24 @@
 <?php
     $fname=$_POST["fname"];
+    $lname=$_POST["lname"];
+    $email=$_POST["email"];
+    $user=$_POST["username"];
+    $password=$_POST["password"];
+
+    $conn=new mysqli('localhost','root','','chernobyl');
+    if($conn->connect_error){
+      die('connection failed :'.$conn->connect_error);
+    }else{
+      $stmt=$conn->prepare("  INSERT INTO customer(first_name,last_name,email,user_name,password) VALUES(?,?,?,?,?)");
+      $stmt->bind_param("sssss",$fname,$lname,$email,$user,$password);
+      $stmt->execute();
+      // header("Location:welcome.php");exit;
+      // echo("registration success!");
+      $stmt->close();
+      $conn->close();
+
+    }
+
 ?>
 
 <html>
@@ -10,7 +29,7 @@
     <body id=body>
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar-header">
   <a class="navbar-brand" id="brand" href="index.html" target="_self">
-    <img src="../fromzero/home2.png" alt="company logo" id="logo-img">
+    <img src="../home2.png" alt="company logo" id="logo-img">
     SheCart
   </a>
   <button id="navBartoggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light" id="navbar-header">
   <a class="navbar-brand" id="brand" href="index.html" target="_self">
-    <img src="../fromzero/home2.png" alt="company logo" id="logo-img">
+    <img src="../home2.png" alt="company logo" id="logo-img">
     SheCart
   </a>
   <button id="navBartoggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

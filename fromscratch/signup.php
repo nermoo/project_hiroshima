@@ -5,7 +5,7 @@
         <?php
             require_once "top.php"
         ?>
-        <link rel="stylesheet" type="text/css" href="../fromzero/css/signup.css">
+        <link rel="stylesheet" type="text/css" href="../css/signup.css">
         <title>
         Sign up to SheCart
         </title>

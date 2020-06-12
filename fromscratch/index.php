@@ -4,7 +4,7 @@ require_once "top.php";
 require_once "nav.php";
 
 ?>
-<link rel="stylesheet" type="text/css" href="../fromzero/css/home.css">
+<link rel="stylesheet" type="text/css" href="../css/home.css">
 <body>
 <div class="jumbotron">
       <div class="container">
