@@ -1,23 +1,23 @@
 <?php
-    $fname=$_POST["fname"];
-    $lname=$_POST["lname"];
-    $email=$_POST["email"];
-    $user=$_POST["username"];
-    $password=$_POST["password"];
+    // $fname=$_POST["fname"];
+    // $lname=$_POST["lname"];
+    // $email=$_POST["email"];
+    // $user=$_POST["username"];
+    // $password=$_POST["password"];
 
-    $conn=new mysqli('localhost','root','','chernobyl');
-    if($conn->connect_error){
-      die('connection failed :'.$conn->connect_error);
-    }else{
-      $stmt=$conn->prepare("  INSERT INTO customer(first_name,last_name,email,user_name,password) VALUES(?,?,?,?,?)");
-      $stmt->bind_param("sssss",$fname,$lname,$email,$user,$password);
-      $stmt->execute();
-      // header("Location:welcome.php");exit;
-      // echo("registration success!");
-      $stmt->close();
-      $conn->close();
+    // $conn=new mysqli('localhost','root','','chernobyl');
+    // if($conn->connect_error){
+    //   die('connection failed :'.$conn->connect_error);
+    // }else{
+    //   $stmt=$conn->prepare("  INSERT INTO customer(first_name,last_name,email,user_name,password) VALUES(?,?,?,?,?)");
+    //   $stmt->bind_param("sssss",$fname,$lname,$email,$user,$password);
+    //   $stmt->execute();
+    //   // header("Location:welcome.php");exit;
+    //   // echo("registration success!");
+    //   $stmt->close();
+    //   $conn->close();
 
-    }
+    // }
 
 ?>
 
