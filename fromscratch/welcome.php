@@ -1,13 +1,26 @@
 <?php
-    // $fname=$_POST["fname"];
-    // $lname=$_POST["lname"];
-    // $email=$_POST["email"];
-    // $user=$_POST["username"];
-    // $password=$_POST["password"];
 
-    // $conn=new mysqli('localhost','root','','chernobyl');
-    // if($conn->connect_error){
-    //   die('connection failed :'.$conn->connect_error);
+    // $conn=new PDO('mysql:host=localhost;port=3306;dbname=chernobyl',"nermo","kolitha");
+    // $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    
+    require_once "pdo.php";
+    // echo("connected successfully");
+    if(isset($_POST["fname"]) && isset($_POST["lname"]) && isset($_POST["email"]) && isset($_POST["username"]) && isset($_POST["password"])){
+      // echo("ok");
+      $sql="insert into customer(first_name,last_name,email,user_name,password) values(:fname,:lname,:email,:user,:password)";
+      $stmt=$pdo->prepare($sql);
+      $stmt->execute(array(
+        ':fname'=>$_POST['fname'],
+        ':lname'=>$_POST['lname'],
+        ':email'=>$_POST['email'],
+        ':user'=>$_POST['username'],
+        ':password'=>$_POST['password']
+      ));
+    }
+  
+    
+    
+    
     // }else{
     //   $stmt=$conn->prepare("  INSERT INTO customer(first_name,last_name,email,user_name,password) VALUES(?,?,?,?,?)");
     //   $stmt->bind_param("sssss",$fname,$lname,$email,$user,$password);
@@ -60,7 +73,7 @@
       </nav>
       <div class="jumbotron" id="jumbotron">
       <div class="container">
-        <h1 class="display-4" id="welcome">Welcome To SheCart <?=htmlentities(strtoupper("$fname")) ?>!</h1>
+        <h1 class="display-4" id="welcome">Welcome To SheCart <?=htmlentities(strtoupper("$_POST[fname]")) ?>!</h1>
         <button id="shopping">Keep Shopping&#10141;</button>
       </div>
     </div>

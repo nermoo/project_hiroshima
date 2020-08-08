@@ -26,6 +26,7 @@
         <a class="nav-link" href="login.php" target="_blank">
           <i class="fa fa-user fa-2x" id="glyph"></i> </a>
       </li>
+       
       </ul>
       </div>
       </nav>
